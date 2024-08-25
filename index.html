@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <link rel="shortcut icon" href="img/safety.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="encriptar">
+        <p class="logo"> <img src="img/Logo.png" id="logo1"> </p>
+        <textarea
+          name="texto"
+          class="texto"
+          id="texto"
+          cols="30"
+          rows="10"
+          placeholder="Ingresa texto aqui"   
+        ></textarea>
+
+        <div class="terminos">
+
+          <p>⚠ Solo letras minúsculas y sin acentos.</p>
+        </div>
+        <div class="botones">
+          <button class="btn-encriptar" type="button" onclick="encriptar()">
+            Encriptar
+          </button>
+          <div class="space"></div>
+          <input type="button"
+            class="btn-desencriptar"
+            value="Desencriptar"
+            onclick="desencriptar()"
+          />
+          <!--<button class="btn-copiar" type="button" id="btn-copiar" onclick="copiarTexto()" style="display: none;">
+            Copiar
+          </button>-->
+        </div>
+        <button class="boton_copiar" type="button" id="boton_copiar" onclick="copiarTexto()" style="display: none;" >Copiar</button>
+      </div>
+      <div class="encriptado">
+        <img src="img/antonio.png" alt="" id="antonio" />
+
+        <div class="mensaje-encriptado" id="mensaje-encriptado">
+
+          <!-- <textarea
+            name="mensaje"
+            id="mensaje"
+            cols="30"
+            rows="10"
+            class="mensaje"
+          ></textarea> -->
+        </div>
+      </div>
+      <h2 class="mensaje_no_encontrado" id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+      <p class="ingrese_texto" id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+
+      </p>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
