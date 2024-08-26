@@ -1,18 +1,19 @@
 
-body {
-    background-color: #f2f7fe;
-    overflow: none;
-    width: 95%;
-    height: 95%;
+*{
+box-sizing: border-box;
 }
 
-.container {
+body {
+    background-color: #f2f7fe;
+}
+
+/*.container {
     position: absolute;
     background: #f3f5fc;
     font-family: "Inter", sans-serif;
     width: 100%;
     height: 100vh;
-}
+}*/
 
 .texto {
     resize: none;
@@ -53,30 +54,26 @@ body {
 }
 
 .botones {
-    position: absolute;
     display: flex;
-    justify-content: space-between;
-    height: 9%;
-    width: 50%;
-    left: 11%;
-    top: 82%;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 680px;
+    height: 64px;
+    margin-left: 24px;
+    margin-top: 885px;
 }
 
 .btn-encriptar {
-    /*padding: 2%;
-    position: absolute;*/
-    margin-right: 15px;
-    width: 95%;
-    height: 110%;
+    height: 67px;
+    width: 328px;
+    margin-right: 12px;
     background-color: #d8dfe8;
     border-radius: 24px;
     font-family: "Inter", sans-serif;
     font-size: 18px;
     line-height: 19px;
-    text-align: center;
     color: #0a3871;
     border: 1px solid #0a3871;
-    /*margin: 24px;*/
 }
 
 .btn-encriptar:hover {
@@ -85,21 +82,16 @@ body {
 }
 
 .btn-desencriptar {
-    /*padding: 2%;
-    position: absolute;*/
-    margin-left: 15px;
-    width: 95%;
-    height: 110%;
-    left: 350%;
+    height: 67px;
+    width: 328px;
+    margin-left: 12px;
     background-color: #d8dfe8;
     border-radius: 24px;
     font-family: "Inter", sans-serif;
     font-size: 18px;
     line-height: 19px;
-    text-align: center;
     color: #0a3871;
     border: 1px solid #0a3871;
-    /*margin: 24px;*/
 }
 
 .btn-desencriptar:hover {
@@ -181,9 +173,8 @@ box-sizing: border-box;
     box-sizing: border-box;
 }
 
-
 /* Adaptaciones para tabletas */
-@media (max-width: 768px){
+@media (max-width: 933px){
 
     .encriptado {
         width: 88%;
@@ -262,7 +253,7 @@ box-sizing: border-box;
 }
 
 /* Adaptaciones para teléfonos móviles */
-@media (max-width: 461px){
+@media (max-width: 400px){
 
     .encriptado {
         width: 98%;
@@ -307,7 +298,7 @@ box-sizing: border-box;
     .btn-encriptar {
         font-size: 18px;
         height: 70px;
-        width: 470px;
+        width: 392px;
         margin-bottom: 100px;
     }
 
@@ -316,12 +307,12 @@ box-sizing: border-box;
         left: -15px;
         margin-top: 100px;
         height: 70px;
-        width: 470px;
+        width: 392px;
         font-size: 18px;
     }
 
     .terminos {
-        width: 53%;
+        width: 80%;
         top: 78%;
         left: 4%;
     }
