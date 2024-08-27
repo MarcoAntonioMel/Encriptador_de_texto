@@ -21,6 +21,10 @@ body {
     height: auto;
 }
 
+.texto{
+    height: 340px;
+}
+
 .logo {
     height: 40px;
     margin-top: 20px;
@@ -28,7 +32,6 @@ body {
 }
 
 .encriptar {
-    margin-top: 50px;
     width: 100%;
     padding: 40px;
 }
@@ -57,9 +60,8 @@ body {
     font-size: 13px;
 }
 
-
 .btn {
-    height: 67px;
+    height: 60px;
     width: 100%;
     background-color: #d8dfe8;
     font-size: 18px;
@@ -124,12 +126,15 @@ body {
 
     body{
         background: #f3f5fc;
+        font-family: 'Inter', sans-serif;
     }
 
     .container {
         display: flex;
         flex-direction: row;
         height: 750px;
+        margin-right: 3%;
+        margin-top: 40px;
     }
 
     .separacion{
@@ -140,12 +145,16 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-right: 25px;
         background: #fff;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         border-radius: 32px;
         width: 25%;
         text-align: center;
         padding: 20px 0 40px 0;
+    }
+
+    .bgantonio{
     }
     
     .texto {
@@ -195,6 +204,7 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        margin-right: 30px;
     }
 
     .btn {
