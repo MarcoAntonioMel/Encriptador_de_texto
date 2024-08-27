@@ -6,59 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encriptador de Texto</title>
     <link rel="shortcut icon" href="img/safety.png" type="image/x-icon" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+
     <div class="container">
+      <div class="logo">
+        <img src="img/Logo.png" id="logo1">
+      </div>
+
       <div class="encriptar">
-        <p class="logo"> <img src="img/Logo.png" id="logo1"> </p>
         <textarea
           name="texto"
           class="texto"
           id="texto"
           cols="30"
           rows="10"
-          placeholder="Ingresa texto aqui"   
+          placeholder="Ingresa texto aqui"
         ></textarea>
 
         <div class="terminos">
-
           <p>⚠ Solo letras minúsculas y sin acentos.</p>
         </div>
+
         <div class="botones">
-          <button class="btn-encriptar" type="button" onclick="encriptar()">
+          <button type="button" class="btn btn-blue separacion" onclick="encriptar()">
             Encriptar
           </button>
-          <div class="space"></div>
-          <input type="button"
-            class="btn-desencriptar"
-            value="Desencriptar"
-            onclick="desencriptar()"
-          />
-          <!--<button class="btn-copiar" type="button" id="btn-copiar" onclick="copiarTexto()" style="display: none;">
-            Copiar
-          </button>-->
+
+          <button type="button" class="btn btn-grey" onclick="desencriptar()">
+            Desencriptar
+          </button>
         </div>
-        <button class="boton_copiar" type="button" id="boton_copiar" onclick="copiarTexto()" style="display: none;" >Copiar</button>
       </div>
-      <div class="encriptado">
-        <img src="img/antonio.png" alt="" id="antonio" />
+
+      <!--<div class="encriptado">
 
         <div class="mensaje-encriptado" id="mensaje-encriptado">
 
-          <!-- <textarea
+           <textarea
             name="mensaje"
             id="mensaje"
             cols="30"
             rows="10"
             class="mensaje"
-          ></textarea> -->
+          ></textarea>
         </div>
-      </div>
-      <h2 class="mensaje_no_encontrado" id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
-      <p class="ingrese_texto" id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+      </div>-->
 
-      </p>
+      <div class="footer">
+        <img src="img/antonio.png" class="bgantonio" alt="" id="antonio" />
+        <h2 class="mensaje_no_encontrado" id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+        <p class="ingrese_texto" id="parrafo">
+          Ingresa el texto que deseas encriptar o desencriptar
+        </p>
+        <button class="btn btn-white" type="button" id="boton_copiar" onclick="copiarTexto()" style="display: none;" >Copiar</button>
+      </div>
+
     </div>
   </body>
   <script src="index.js"></script>
